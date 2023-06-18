@@ -49,9 +49,13 @@ displayResult();
 
 };
 
-window.addEventListener('load', function() {
+function handleSubmit() {
     const form = document.getElementById("calculator");
     const button = document.getElementById("clear");
     form.addEventListener("submit", handleCalculation);
     button.addEventListener("click", clearForm);
-});
+}
+
+window.addEventListener('load',handleSubmit);
+
+
